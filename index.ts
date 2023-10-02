@@ -50,4 +50,4 @@ const printPost = (postToPrint: Post) => {
 console.log(printPost(post))
 //It can get really long. So you can use 
 
-//Typescript Interface
+//Typescript Interface is like a customisable type
