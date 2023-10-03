@@ -1,10 +1,13 @@
 class Car {
-    color: string;
-    year: number;
+    // public color: string;
+    // When you make a property public, you can access it outside of the class
+    // Public is set as default. You can add it in if you want to be very precise
+    // private year: number;
+    // Where if you use a private modifier you can't access it outside the class. Only methods inside the class.
+    // The don't want to share what you don't need to. 
 
-    constructor(color: string, year: number){
-        this.color = color;
-        this.year = year;
+    constructor(public color: string, private year: number){
+
     }
 
 
@@ -14,7 +17,7 @@ class Car {
 }
 
 const newCar = new Car('red', 2000);
-newCar.drive()
+console.log(newCar.color)    
 
 
 
