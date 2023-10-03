@@ -79,3 +79,35 @@ class Car {
 // //It can get really long. So you can use 
 
 // //Typescript Interface is like a customisable type
+
+
+// interface Drivable {
+//     speed: number;
+//     drive(): string; 
+// }
+
+// class Car implements Drivable {
+//     speed = 10;
+
+//     drive(){
+//         return `I am driving at this ${this.speed}`;
+//     }
+// }
+//Typescript will look at the car class and make sure it adheres to the interface Drivable
+
+// const myCar = new Car();
+
+// const startDriving = (vehicle: Drivable) => {
+//     vehicle.drive();
+// }
+
+// console.log(startDriving(myCar));
+
+
+//decorators are just a function
+//It gets called when the class gets executed
+
+// @Component()
+// class Car {}
+//This is a decorator function
+

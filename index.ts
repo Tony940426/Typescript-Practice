@@ -1,16 +1,8 @@
-import './Car'
+//Generic Classes
+//Use them if we have a lot of classes with few property changes
+class ValueHolder<TypeForValueProperty> {
+    value: TypeForValueProperty;
+}
 
-const Component = (target: any) => {
-    console.log(target);
-};
-
-@Component
-class Car {}
-//The above is also known as a plain decorator
-//decorators are just a function
-//It gets called when the class gets executed
-
-// @Component()
-// class Car {}
-//This is a decorator function
-
+const numberHolder = new ValueHolder<number>();
+numberHolder.value = 12
